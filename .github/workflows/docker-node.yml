@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME:sathanav16/sample_node_app
+      IMAGE_NAME: sathanav16/sample_node_app  # ✅ Corrected this line
 
     steps:
       - name: 📥 Checkout code
@@ -24,7 +24,6 @@ jobs:
 
       - name: 📦 Install dependencies
         run: npm i
-
 
       - name: 🔐 Log in to Docker Hub
         uses: docker/login-action@v2
